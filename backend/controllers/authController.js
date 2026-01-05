@@ -47,5 +47,5 @@ const googleCallbackController = async (req, res) => {
 };
 
 module.exports = {
-  
+  googleCallbackController,
 };
