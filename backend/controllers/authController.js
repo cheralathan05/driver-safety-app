@@ -44,6 +44,7 @@ const googleCallbackController = async (req, res) => {
       `${process.env.CLIENT_URL || "http://localhost:3000"}/login?error=OAuthFailed`
     );
   }
+};
 
 module.exports = {
   googleCallbackController,
