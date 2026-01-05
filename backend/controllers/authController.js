@@ -36,7 +36,7 @@ const googleCallbackController = async (req, res) => {
     });
 
     // 4️⃣ Redirect to dashboard
-    return res.redirect(`${CLIENT_URL}/dashboard`);
+    return res.redirect(`${CLIENT_RL}/dashboard`);
 
   } catch (err) {
     console.error("Google OAuth Error:", err);
