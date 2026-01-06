@@ -25,7 +25,7 @@ const googleCallbackController = async (req, res) => {
     }
 
     // 2️⃣ Sign JWT  ✅ FIXED (use id)
-    const t = signToken({ id: user._id.toString() });
+    const token = signToken({ id: user._id.toString() });
 
     // 3️⃣ Store JWT in httpOnly cookie ✅ FIXED
     res.cookie("token", token, {
