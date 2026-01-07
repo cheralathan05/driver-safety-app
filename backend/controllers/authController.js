@@ -20,7 +20,7 @@ const googleCallbackController = async (req, res) => {
         googleId: googleUser.id,
         name: googleUser.displayName,
         email: googleUser.email,
-        avatar: googleUser.photos?.[0]?.value,
+        avatar: googleUser.photos?.[0]?.valu
       });
     }
 
