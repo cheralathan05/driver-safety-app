@@ -9,7 +9,7 @@ const googleCallbackController = async (req, res) => {
       process.env.CLIENT_URL || "http://localhost:3000";
 
     if (!googleUser) {
-      return res.redirect(`${CLIENT_URL}/login?error=NoGoogleUser`);
+      return res.redirect(`${CLIENT_URL}/login?er]ror=NoGoogleUser`);
     }
 
     // 1️⃣ Find or create user
