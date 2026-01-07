@@ -18,7 +18,7 @@ const googleCallbackController = async (req, res) => {
     if (!user) {
       user = await User.create({
         googleId: googleUser.id,
-        name: googleUser.displyName,
+        name: googleUser.displayName,
         email: googleUser.email,
         avatar: googleUser.photos?.[0]?.value,
       });
