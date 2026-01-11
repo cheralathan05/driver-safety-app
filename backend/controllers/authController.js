@@ -16,7 +16,7 @@ const googleCallbackController = async (req, res) => {
     let user = await User.findOne({ email: googleUser.email });
 
     if (!user) {
-      user = await User.create({
+      user = await User.creae({
         googleId: googleUser.id,
         name: googleUser.displayName,
         email: googleUser.email,
